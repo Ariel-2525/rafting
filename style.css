@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #0073e6;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Poppins', sans-serif;
+    --background-color: #f0f0f0;
+    --text-color: #555;
+    --white-color: #fff;
+}
+
+
+body {
+    height: 100%;
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: var(--font-secondary);
+}
+
+a {
+    text-decoration: none;
+}
+
+footer .social-icon {
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    position: relative;
+    height: 200vh;
+    background-image: url('raftinghero.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--white-color);
+    font-family: var(--font-secondary);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--white-color);
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- History Section --- */
+#history {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    display: block;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#history h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+#history p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Adventure Section --- */
+#adventure {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#adventure img {
+    width: 70%; /* Reducir el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: var(--white-color);
+}
+
+footer .social-icon:hover {
+    color: var(--secondary-color);
+}
+
+
+
+
+
